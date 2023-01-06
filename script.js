@@ -3,6 +3,7 @@ let mainDiv = document.getElementById('main');
 for (let i = 1; i <= 5; i++) {
     let img = document.createElement('img');
     img.setAttribute('src', `images/${i}.png`);
+    img.className = `img${n}`
     img.setAttribute('data-ns-img', i)
     img.onclick = function (e) {
         readCaptcha(this);
